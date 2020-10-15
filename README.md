@@ -2,6 +2,11 @@
 
 This is a proof-of-concept that tests out the viability of auto-generated SDKs from public Webex APIs.
 
+The proof-of-concept only covers one Webex API [/people/me](https://developer.webex.com/docs/api/v1/people/get-my-own-details),
+as it should be sufficient to test out the feasibility of using
+[Swagger Codegen](https://github.com/swagger-api/swagger-codegen/tree/3.0.0)
+to generate SDKs.
+
 [OpenAPI v3](https://swagger.io/specification/) of the specification was used for the metadata of the APIs.
 Be sure to match the Swagger tools to use version 3.
 

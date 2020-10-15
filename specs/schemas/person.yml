@@ -1,0 +1,26 @@
+person:
+  description: A Webex user
+  type: object
+  required:
+    - id
+  properties:
+    id:
+      type: string
+    displayName:
+      type: string
+    firstName:
+      type: string
+    lastName:
+      type: string
+    avatar:
+      type: string
+    emails:
+      type: array
+      items:
+        $ref: #/email
+    orgId:
+      type: string
+
+email:
+  description: A person email address
+  type: string

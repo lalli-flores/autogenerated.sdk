@@ -1,0 +1,10 @@
+error:
+  description: Object used whenever a requests fails
+  type: object
+  required:
+    - message
+  properties:
+    message:
+      type: string
+    trackingId:
+      type: string

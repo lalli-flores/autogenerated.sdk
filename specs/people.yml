@@ -1,0 +1,24 @@
+me:
+  get:
+    summary: Returns the profile of the authenticated user.
+    description: This is the same as GET /people/{personId} using the Person ID associated with your Auth token.
+    externalDocs:
+      description: Developer Portal Documentation
+      url: https://developer.webex.com/docs/api/v1/people/get-my-own-details
+    operationId: getMyOwnDetails
+    response:
+      200:
+        description: Successful response returns authenticated user data
+        content:
+          application/json:
+            schema:
+              $ref: ./schemas/person#/person
+      401:
+        description: >
+          Unsuccessful request due to access token not being authorized.
+          Common reasons for an unauthorized token are not having sufficient or the right scopes
+          or using an expired access token.
+        content:
+          application/json:
+            schema:
+              $ref: ./schema/error#/error
