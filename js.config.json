@@ -1,0 +1,7 @@
+{
+  "projectName": "@webex/apis",
+  "projectDescription": "This is a proof-of-concept which goal is to generate SDKs from Webex REST APIs.",
+  "moduleName": "WebexAPIs",
+  "usePromises": true,
+  "hideGenerationTimestamp": false
+}

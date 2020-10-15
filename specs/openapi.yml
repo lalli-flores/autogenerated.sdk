@@ -1,0 +1,31 @@
+openapi: 3.0.0
+
+info:
+  title: Webex API SDK (POC)
+  version: 0.0.0
+  description: This is a proof-of-concept which goal is to generate SDKs from Webex REST APIs.
+  termsOfService: https://www.cisco.com/c/en/us/about/legal/terms-conditions.html
+  contact:
+    name: Developer Support
+    email: devsupport@webex.com
+    url: https://developer.webex.com/support
+  license:
+    name: MIT
+    url: https://tldrlegal.com/license/mit-license
+
+servers:
+  - url: https://webexapis.com/v1
+    description: Production Developer API Gateway
+
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+
+security:
+  - bearerAuth: []
+
+paths:
+  /people/me:
+    $ref: ./people.yml#/me
